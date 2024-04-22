@@ -4,7 +4,7 @@ const axios = require('axios');
 const SECRETNAME = 'Bearer_Token'; //Enter the name of your API secret configured in the action setup
 const ASSOCIATIONTYPE = { associationCategory: "HUBSPOT_DEFINED", associationTypeId: 279 }; //{ associationCategory, associationTypeId }, Use empty object for default association https://developers.hubspot.com/docs/api/crm/associations
 const TARGETOBJECT = 'company'; //Internal name of the object type you want to associate to this object
-const TARGETPROPERTY = ''; //Internam name of the property on the object you want to match against
+const TARGETPROPERTY = ''; //Internal name of the property on the object you want to match against
 const ERRORS = { 
   notfound: true, //Throw an error if no matching record is found
   multiple: false //Throw an error if more than a single match was found
